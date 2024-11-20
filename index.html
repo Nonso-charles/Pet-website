@@ -3,192 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pawsome Trio Navbar</title>
+  <title>Pawsome Trio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Custom logo styling */
-    .logo {
-      font-family: 'Pacifico', cursive;
-    }
-    
-    /* Custom animation for Bella's introduction */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in-up {
-      animation: fadeInUp 1s ease-out;
-    }
-
-    /* Subtle hover animation for the button */
-    .hover-grow:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-in-out;
-    }
-    
-     /* Custom animation for Kirby's entry */
-    @keyframes slideInLeft {
-      0% {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .slide-in-left {
-      animation: slideInLeft 1s ease-out;
-    }
-
-    /* Custom pulse hover effect */
-    .hover-pulse:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in-out;
-    }
-    
-    /* Custom animation for Floyd's entry */
-    @keyframes slideInRight {
-      0% {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .slide-in-right {
-      animation: slideInRight 1s ease-out;
-    }
-
-    /* Custom bounce on hover */
-    .hover-bounce:hover {
-      transform: translateY(-10px);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    /* Waving paw effect for Floyd's image */
-    @keyframes pawWave {
-      0%, 100% {
-        transform: rotate(0deg);
-      }
-      50% {
-        transform: rotate(-10deg);
-      }
-    }
-
-    .paw-wave {
-      animation: pawWave 1.5s infinite ease-in-out;
-    }
-    
-       /* Custom animation for section fade-in */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in-up {
-      animation: fadeInUp 1s ease-out;
-    }
-
-    /* Animation for each pet's image */
-    @keyframes zoomIn {
-      0% {
-        transform: scale(0.8);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .zoom-in {
-      animation: zoomIn 1s ease-out;
-    }
-
-    /* Hover effect for pets' images */
-    .hover-grow:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-in-out;
-    }
-    
-      /* Animation for the contact section */
-    @keyframes slideIn {
-      0% {
-        opacity: 0;
-        transform: translateX(-100%);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .slide-in {
-      animation: slideIn 1s ease-out;
-    }
-
-    /* Hover effect for the buttons */
-    .hover-grow:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    /* Animation for the form elements */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in-up {
-      animation: fadeInUp 1s ease-out;
-    }
-    
-        /* Animation for footer content */
-    @keyframes slideInFooter {
-      0% {
-        opacity: 0;
-        transform: translateY(100px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .slide-in-footer {
-      animation: slideInFooter 1s ease-out;
-    }
-
-    /* Hover effect for icons */
-    .hover-grow:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in-out;
-    }
-  </style>
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navbar Section -->
@@ -198,7 +16,7 @@
         <!-- Logo -->
         <div class="flex items-center">
           <a href="#" class="flex items-center">
-            <img src="https://via.placeholder.com/40" alt="Logo" class="h-10 w-10 rounded-full">
+            <img src="dog.png" alt="Logo" class="h-10 w-10">
             <span class="ml-2 text-2xl font-bold logo">Pawsome Trio</span>
           </a>
         </div>
@@ -274,7 +92,7 @@
         <!-- Kirby's Image -->
         <div class="relative w-full md:w-1/2 slide-in-left">
           <img 
-            src="https://via.placeholder.com/400x400?text=Kirby" 
+            src="kirby.jpeg" 
             alt="Kirby" 
             class="rounded-lg shadow-lg hover-pulse transition duration-300"
           >
@@ -317,7 +135,7 @@
         <!-- Floyd's Image -->
         <div class="relative w-full md:w-1/2 slide-in-right">
           <img 
-            src="https://via.placeholder.com/400x400?text=Floyd" 
+            src="floyd.jpeg" 
             alt="Floyd" 
             class="rounded-lg shadow-lg paw-wave"
           >
@@ -342,7 +160,7 @@
         <!-- Bella's Section -->
         <div class="text-center fade-in-up md:w-1/3">
           <img 
-            src="https://via.placeholder.com/300x300?text=Bella" 
+            src="bella2.jpeg" 
             alt="Bella" 
             class="rounded-full shadow-lg hover-grow zoom-in"
           >
@@ -355,7 +173,7 @@
         <!-- Kirby's Section -->
         <div class="text-center fade-in-up md:w-1/3">
           <img 
-            src="https://via.placeholder.com/300x300?text=Kirby" 
+            src="kirby.jpeg" 
             alt="Kirby" 
             class="rounded-full shadow-lg hover-grow zoom-in"
           >
@@ -368,7 +186,7 @@
         <!-- Floyd's Section -->
         <div class="text-center fade-in-up md:w-1/3">
           <img 
-            src="https://via.placeholder.com/300x300?text=Floyd" 
+            src="floyd.jpeg" 
             alt="Floyd" 
             class="rounded-full shadow-lg hover-grow zoom-in"
           >
@@ -476,60 +294,6 @@
     </div>
   </footer>
 
-
-  <!-- JavaScript for Mobile Menu -->
-  <script>
-    // Select the mobile menu and toggle button
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-
-    // Toggle mobile menu visibility
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-    
-    // Scroll-triggered animation for Bella's section
-document.addEventListener("DOMContentLoaded", () => {
-    const bellaSection = document.querySelector("#bella");
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const elements = bellaSection.querySelectorAll(".fade-in-up");
-                elements.forEach((el) => el.classList.add("animate-fadeInUp"));
-            }
-        });
-    });
-    observer.observe(bellaSection);
-});
-
-// Scroll-triggered animation for Kirby's section
-document.addEventListener("DOMContentLoaded", () => {
-    const kirbySection = document.querySelector("#kirby");
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const elements = kirbySection.querySelectorAll(".slide-in-left");
-                elements.forEach((el) => el.classList.add("animate-slideInLeft"));
-            }
-        });
-    });
-    observer.observe(kirbySection);
-});
-
-
-// Scroll-triggered animation for Floyd's section
-document.addEventListener("DOMContentLoaded", () => {
-    const floydSection = document.querySelector("#floyd");
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const elements = floydSection.querySelectorAll(".slide-in-right");
-                elements.forEach((el) => el.classList.add("animate-slideInRight"));
-            }
-        });
-    });
-    observer.observe(floydSection);
-});
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
